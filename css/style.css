@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.container {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Opensans";
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.39;
+  background-color: #F7859C;
+  border-radius: 12px;
+  padding: 7px 28px 11px 28px;
+  color: white;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: 1px solid #F7859C;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #F7859C;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Opensans";
+  src: url("../fonts/opensans/OpenSans-Bold.woff2");
+  src: local("☺"), url("../fonts/opensans/OpenSans-Bold.woff") format("woff"), url("../fonts/opensans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Opensans";
+  src: url("../fonts/opensans/OpenSans-Regular.woff2");
+  src: local("☺"), url("../fonts/opensans/OpenSans-Regular.woff") format("woff"), url("../fonts/opensans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype"), url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype"), url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  padding: 28px 0 20px 0;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link-item {
+  color: #222222;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.39;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.menu__link-item:hover {
+  color: #404756;
+}
+
+@media (max-width: 1449.98px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+  }
+}
