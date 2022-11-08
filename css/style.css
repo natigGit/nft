@@ -317,6 +317,11 @@ body.locked {
   top: 0;
 }
 
+.collection {
+  background: url("../img/collection_bottom.svg") no-repeat bottom center/contain;
+  padding-bottom: 250px;
+}
+
 .collection__subtitle {
   position: relative;
   max-width: -webkit-fit-content;
