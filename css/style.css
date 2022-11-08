@@ -143,6 +143,14 @@ body.locked {
   line-height: 1.39;
 }
 
+.head {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 0.88;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -381,6 +389,82 @@ body.locked {
   height: 666px;
 }
 
+.tier {
+  background-color: #FBF1E6;
+  padding-top: 120px;
+  padding-bottom: 108px;
+  overflow: hidden;
+}
+
+.tier__subtitle {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  z-index: 1;
+}
+
+.tier__subtitle span {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  z-index: -1;
+}
+
+.tier__title {
+  margin-top: 4px;
+}
+
+.tier__hr {
+  margin-top: 78px;
+  width: 100vw;
+  height: 1px;
+  background: rgba(64, 71, 86, 0.6);
+  border-radius: 0px;
+}
+
+.tier__level-item {
+  margin-top: 62px;
+  margin-bottom: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 250px;
+}
+
+.tier__level-textbox {
+  max-width: 336px;
+}
+
+.tier__level-tier {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.tier__level-level {
+  color: #404756;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 0.88;
+}
+
+.tier__level-description {
+  margin-top: 28px;
+}
+
+.tier__level-image {
+  margin-top: 11px;
+}
+
+.roadmap {
+  padding-top: 200px;
+  background: url("../img/roadmap_roof.svg") no-repeat top center/contain;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -440,6 +524,10 @@ body.locked {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .tier__level-item {
+    gap: 150px;
   }
 }
 
@@ -570,6 +658,17 @@ body.locked {
     background: "black";
     top: 100%;
   }
+
+  .tier__level-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -631,8 +730,29 @@ body.locked {
     font-size: 3rem;
   }
 
+  .collection {
+    padding-bottom: 150px;
+  }
+
   .collection__textbox-hr {
     width: 260px;
+  }
+}
+
+@media (max-width: 400px) {
+  .text {
+    font-size: 1.5rem;
+  }
+
+  .tier__level-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .collection {
+    padding-bottom: 100px;
   }
 }
 
