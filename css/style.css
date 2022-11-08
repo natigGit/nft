@@ -317,6 +317,65 @@ body.locked {
   top: 0;
 }
 
+.collection__subtitle {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.collection__subtitle span {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  z-index: -1;
+}
+
+.collection__title {
+  margin-top: 4px;
+  text-align: center;
+}
+
+.collection__content {
+  padding-top: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 170px;
+}
+
+.collection__textbox-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 0.92;
+}
+
+.collection__textbox-text {
+  margin-top: 17px;
+  max-width: 332px;
+}
+
+.collection__textbox-hr {
+  height: 1px;
+  background: rgba(64, 71, 86, 0.6);
+  margin-top: 32px;
+  margin-bottom: 27px;
+  width: 375px;
+}
+
+.collection__imagebox img {
+  width: 621px;
+  height: 666px;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -334,6 +393,17 @@ body.locked {
 
   .dec-2 {
     right: -10%;
+  }
+
+  .collection__content {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .collection__imagebox img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -355,6 +425,17 @@ body.locked {
   .header__container {
     max-width: 970px;
   }
+
+  .title {
+    font-size: 5.5rem;
+  }
+
+  .collection__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 870px) {
@@ -374,6 +455,10 @@ body.locked {
 
   .header__container {
     max-width: 740px;
+  }
+
+  .title {
+    font-size: 4rem;
   }
 
   .logo {
@@ -535,6 +620,14 @@ body.locked {
 
   .header__container {
     max-width: none;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .collection__textbox-hr {
+    width: 260px;
   }
 }
 
