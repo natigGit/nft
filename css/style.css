@@ -460,9 +460,176 @@ body.locked {
   margin-top: 11px;
 }
 
-.roadmap {
-  padding-top: 200px;
-  background: url("../img/roadmap_roof.svg") no-repeat top center/contain;
+.map {
+  padding-top: 260px;
+  padding-bottom: 105px;
+  background: url("../img/roadmap_roof.svg") no-repeat top center/contain, url("../img/map-bg.svg") no-repeat bottom center/contain;
+  overflow: hidden;
+}
+
+.map__subtitle {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.map__subtitle span {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  z-index: -1;
+}
+
+.map__title {
+  text-align: center;
+}
+
+.map__content {
+  padding-top: 105px;
+}
+
+.map__content-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 108px;
+}
+
+.map__percentage {
+  position: absolute;
+  left: 0;
+  top: 110px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #F7859C;
+  font-weight: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 0.88;
+}
+
+.map__main {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  position: relative;
+  margin: 0 auto;
+  padding: 122px 108px 146px 85px;
+  background: url("../img/map__content-bg.svg") no-repeat center/contain;
+}
+
+.map__main img {
+  position: absolute;
+  top: -16px;
+  right: -80px;
+}
+
+.map__textbox {
+  max-width: 336px;
+}
+
+.map__main-subtitle {
+  font-weight: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 0.88;
+}
+
+.map__main-title {
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+.map__main-text {
+  margin-top: 23px;
+}
+
+.map__image {
+  position: absolute;
+  right: -80px;
+  bottom: 40px;
+}
+
+.map__image-item {
+  position: relative;
+  left: -220px;
+  top: -350px;
+}
+
+.map__image-item img {
+  position: absolute;
+}
+
+.map__image-item img:nth-child(1) {
+  z-index: 1;
+}
+
+.map__image-item img:nth-child(2) {
+  z-index: 0;
+  top: -12px;
+  left: -60px;
+}
+
+.team {
+  background-color: #FDDBE2;
+  padding-top: 140px;
+  padding-bottom: 125px;
+}
+
+.team__subtitle {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.team__subtitle span {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  z-index: -1;
+}
+
+.team__title {
+  text-align: center;
+}
+
+.team__content {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 68px;
+  grid-column-gap: 48px;
+}
+
+.team__content-item {
+  text-align: center;
+}
+
+.team__textbox img {
+  max-width: 100%;
+  height: auto;
+}
+
+.team__position {
+  margin-top: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 0.88;
+}
+
+.team__name {
+  margin-top: 6px;
 }
 
 @media (max-width: 1449.98px) {
@@ -669,6 +836,23 @@ body.locked {
             align-items: center;
     gap: 50px;
   }
+
+  .map {
+    padding-top: 160px;
+    padding-bottom: 55px;
+  }
+
+  .map__percentage {
+    top: 0;
+  }
+
+  .map__image {
+    display: none;
+  }
+
+  .team__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 670px) {
@@ -689,7 +873,19 @@ body.locked {
 
 @media (max-width: 580px) {
   .intro__title {
-    font-size: 7.7rem;
+    font-size: 5.7rem;
+  }
+
+  .map__main img {
+    display: none;
+  }
+
+  .map__main-title {
+    font-size: 2.6rem;
+  }
+
+  .map__main-text {
+    font-size: 1.6rem;
   }
 }
 
@@ -737,11 +933,36 @@ body.locked {
   .collection__textbox-hr {
     width: 260px;
   }
+
+  .map__content-item {
+    margin-bottom: 0;
+  }
+
+  .map__main {
+    padding: 102px 30px 126px 30px;
+  }
+
+  .map__main-title {
+    font-size: 2.2rem;
+  }
+
+  .map__main-text {
+    font-size: 1.4rem;
+  }
+
+  .team {
+    padding-top: 80px;
+    padding-bottom: 75px;
+  }
+
+  .team__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 400px) {
   .text {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
   .tier__level-image img {
@@ -756,8 +977,15 @@ body.locked {
   }
 }
 
+@media (max-width: 375px) {
+  .map {
+    padding-top: 100px;
+    padding-bottom: 15px;
+  }
+}
+
 @media (max-width: 280px) {
   .intro__title {
-    font-size: 6.7rem;
+    font-size: 4.7rem;
   }
 }
