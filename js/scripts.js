@@ -5,12 +5,8 @@ function burgerMenu() {
     const menu = document.querySelector('.menu')
     const body = document.querySelector('body')
 
-    menu.addEventListener('click', (event) =>{
-      if (!menu.classList.contains('active')) {
-        menu.classList.add('active')
-        burger.classList.add('active-burger')
-        body.classList.add('locked')
-      } else {
+    menu.addEventListener('click', (e) => {
+      if(menu.classList.contains('active')){
         menu.classList.remove('active')
         burger.classList.remove('active-burger')
         body.classList.remove('locked')
